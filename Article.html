@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<meta charset="utf-8"> 
+<html>
+<head>
+	<title>Article</title>
+	<style type="text/css">
+		
+		body{
+			background-image: url(https://img.freepik.com/photos-gratuite/gros-plan-marbre-blanc-fond-texture_53876-63489.jpg?size=626&ext=jpg);
+			font-family: monospace;	
+		}
+
+		img{
+			border-radius: 50%;	
+			box-shadow: 1px 1px 3px black;
+			display: inline-block;
+			position: fixed;
+		}
+
+		.profil{
+			width: 7%;
+			height: 15%;
+			margin-left: 1%;
+			margin-top: 1%;
+			position: fixed;
+			z-index: 10;
+		}
+
+		.profil:hover{
+			border-bottom: 4px solid black;
+			width: 6%;
+			height: 14%;
+		}
+
+		.name{
+			display: inline-block;
+			position: fixed;
+			margin-left: 10%;
+			margin-top: 2%;
+			color: black;
+			font-family: 'Georgia', cursive, serif;
+			font-size: 150%;
+			font-weight: bolder;
+		}
+
+		.clipart{
+			width: 2%;
+			height: 2%;
+			margin-left: 8.5%;
+			margin-top: 5%;
+			position: sticky;
+			display: inline;
+		}
+
+		.fixed{
+			position: fixed;
+			top: 0%;
+			width: 99%;
+			height: 20%;
+			margin: 0%; 
+			border-radius: 20px;                  
+			background-color: #926d27;
+			z-index: 10;
+		}
+
+		nav{
+			display: inline;
+		}
+
+		ul{
+			margin: 0%;
+			padding: 0%;
+			padding-left: 50%;
+			width: 100%;
+			overflow: hidden;
+			position: fixed;
+  			top: 5%;
+  			right: 1%;
+		}
+
+		li{
+			display: inline;
+			float: right;
+
+		}
+
+		.menue{
+			display: inline-block;
+			color: black;
+			padding: 8px 16px;
+			border-right: 30%;
+			text-align: center;
+			text-decoration: none;
+			font-family: monospace;
+			font-size: 140%;
+			font-weight: bolder;
+			z-index: 9;
+		}
+
+		.menue:hover {
+  			background-color: #808000;
+  			color: white;
+		}
+
+		.document{                                     /* Caractéristiques de tous les photos qui mèneront vers les articles */
+			width: 40%;
+			height: 40%;
+			margin-top: 3%;
+			box-align: start;
+			position: relative;
+			display: table;
+			justify-content: center;
+
+		}
+
+		.prems{                                       /* Marge spéciale pour le premier article */
+			margin-top: 15%;
+		}
+
+		.titre{                                       /* Caractéristiques pour le titre des articles qui sera, au même titre que les photos, un lien direct vers l'article */
+			text-decoration: none;
+			color: black;
+			font-family: 'Georgia', cursive, serif;
+			font-size: 150%;
+			font-weight: bolder;
+			position: relative;
+			display: table;
+			justify-content: center;
+		}
+
+		table{                                              /* µCaractéristiques du tableau contenant photos et titres */
+			margin-top: 7%;
+			margin-bottom: 5%;
+		}
+
+		td{
+			width: 50%;
+		}
+
+		.image{
+			width: 40%;
+			height: 70%;
+		}
+
+		.footer{
+		    position: fixed;
+		    margin: 0%;
+		    margin-right: 10%;
+		    background-color: #926d27;
+		    color: black;
+		    bottom: 0%;
+		    width: 100%;
+		    height: 5%;
+		    text-align: center;
+		    box-sizing: border-box;
+		    text-decoration: none;
+			color: black;
+			font-family: 'Georgia', cursive, serif;
+			font-size: 150%;
+			font-weight: bolder;
+		}
+
+
+	</style>
+</head>
+<meta name="viewport" content="width=device-width">
+
+<body>
+	<header class="fixed">  
+		<a href="file:Who.html">
+			<img border="0"  src="arzu.jpg" class="profil">
+		</a>
+
+		<h3 class="name">
+			Arzu ÇAKIR MORIN
+		</h3>
+		<div>
+			<a href="https://twitter.com/cakirmorin" onclick="window.open(this.href); return false;">
+				<img src="Twitter.png" class="clipart">
+			</a>
+
+			<a href="https://www.linkedin.com/in/arzu-cakir-morin-606a666b/?originalSubdomain=fr" onclick="window.open(this.href); return false;">
+				<img src="linkedin.png" class="clipart">
+			</a>
+
+			<a href="https://www.facebook.com/arzu.morin" onclick="window.open(this.href); return false;">
+				<img src="Facebook.jpg" class="clipart">
+			</a>
+
+		</div>
+
+			
+		<nav>
+				<ul>
+
+					<li>
+						<a href="file:Informations.html" class="menue">Liens</a>
+					</li>
+
+					<li>
+						<a href="file:Commentaires.html" class="menue">Commentaires</a>
+					</li>
+
+					<li>
+						<a href="file:Photos.html" class="menue">Photos</a>
+					</li>
+
+					<li>
+						<a href="file:Article.html" class="menue">Articles</a>
+					</li>
+
+					<li>
+						<a href="file:Interviews.html" class="menue">Interviews</a>
+					</li>
+
+					<li>
+						<a href="file:Accueil.html" class="menue">Accueil</a>
+					</li>
+				</ul>
+			</nav>
+	</header>
+
+	<table >                                                                  <!-- Définitions du tableau contenant les photos et les titres menant vers les articles -->
+		<tr>
+			<td class="image">
+				<a href="Article/Gösteriler.htm">
+					<img src="Article/Gösteriler.png" class="document prems" title="Gösteriler">        <!-- L'image amène au document "Gösteriler.htm"-->
+				</a>
+			</td>
+			<td>
+				<a href="Article/Gösteriler.htm" class="titre">#Black lives matter</a>                  <!-- Le texte amène au document "Gösteriler.htm" -->
+			</td>
+		</tr>
+		<tr>
+			<td class="image">
+				<a href="Article/AB.htm">
+					<img src="Article/AB.png" class="document">
+				</a>
+			</td>
+			<td>
+				<a href="Article/AB.htm" class="titre">AB’den Ekonomiyi Ayağa Kaldırmak İçin "Ortak Havuz" Adımı </a>
+			</td>
+		</tr>
+		<tr>
+			<td class="image">
+				<a href="Article/Fransa'da.htm">
+					<img src="Article/Fransa'da.png" class="document">
+				</a>
+			</td>
+			<td>
+				<a href="Article/Fransa'da.htm" class="titre">Fransa'da Yerel Seçimler 28 Haziran'da Yapılacak </a>
+			</td>
+		</tr>
+		<tr>
+			<td class="image">
+				<a href="Article/Avrupa.htm">
+					<img src="Article/Avrupa.jpg" class="document">
+				</a>
+			</td>
+			<td>
+				<a href="Article/Avrupa.htm" class="titre">Avrupa Medyası: 'IŞİD'in Gerçek Lideri El-Salbi'  </a>
+			</td>
+		</tr>
+		<tr>
+			<td class="image">
+				<a href="Article/Polis Bu.htm">
+					<img src="Article/Polis Bu.jpg" class="document">
+				</a>
+			</td>
+			<td>
+				<a href="Article/Polis Bu.htm" class="titre">Fransa'da Yaralanan Türk Gazeteci: ‘Polis Bu Silahlardan Vazgeçmeli’</a>
+			</td>
+		</tr>
+	</table>
+		
+</body>
+<footer style="clear:both">
+
+	<div class="footer">
+		<a href="file:Qui sommes nous.html"> Who are they ? </a>
+	</div>
+
+</footer>
+
+
+</html>

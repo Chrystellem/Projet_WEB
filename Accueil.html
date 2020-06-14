@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<meta charset="utf-8"> 
+<html>
+<head>
+	<title>Accueil</title>                        <!-- Titre de la page -->
+	<style type="text/css">
+		
+		body{                                     /* Background et définition d'une police type */
+			background-image: url(https://img.freepik.com/photos-gratuite/gros-plan-marbre-blanc-fond-texture_53876-63489.jpg?size=626&ext=jpg);	
+			font-family: monospace;
+		}
+
+		img{                                      /* Caractéristiques spécifiques pour chaques images*/
+			border-radius: 50%;	
+			box-shadow: 1px 1px 3px black;
+			display: inline-block;
+			position: fixed;
+		}
+
+		.profil{                                  /* Image comprotant un lien vers à la page du CV de la journaliste, z-index permettra de les faire passer au-dessus des autres éléments */
+			width: 7%;
+			height: 15%;
+			margin-left: 1%;
+			margin-top: 1%;
+			position: fixed;
+			z-index: 10;
+		}
+
+		.profil:hover{                           /* Indique que la photo est cliquable est emmène vers un lien*/
+			border-bottom: 4px solid black;
+			width: 6%;
+			height: 14%;
+		}
+
+		.name{                                   /* Caractéristiques pour le titre qui est le nom de la journaliste*/
+			display: inline-block;
+			position: fixed;
+			margin-left: 10%;
+			margin-top: 2%;
+			color: black;
+			font-family: 'Georgia', cursive, serif;
+			font-size: 150%;
+			font-weight: bolder;
+		}
+
+		.clipart{                                /* Caractéristiques pour les minis photos Facebook, Twitter et Linkedin*/
+			width: 2%;
+			height: 2%;
+			margin-left: 8.5%;
+			margin-top: 5%;
+			position: sticky;
+			display: inline;
+		}
+
+		.fixed{                                  /* Caractéristiques du rectangle définissant notre en tête*/                     
+			position: fixed;
+			top: 0%;
+			width: 99%;
+			height: 20%;
+			margin: 0%; 
+			border-radius: 20px;                  
+			background-color: #926d27;
+			z-index: 10;
+		}
+
+		nav{                                        /* Navigation du menu */
+			display: inline;
+		}
+
+		ul{                                        /* Ligne du menue */                                    
+			margin: 0%;
+			padding: 0%;
+			padding-left: 50%;
+			width: 100%;
+			overflow: hidden;
+			position: fixed;
+  			top: 5%;
+  			right: 1%;
+		}
+
+		li{                                        /* Chaques cases du menu */                  
+			display: inline;
+			float: right;
+
+		}
+
+		.menue{                                    /* Caractéristiques précises du menu */
+			display: inline-block;
+			color: black;
+			padding: 8px 16px;
+			border-right: 30%;
+			text-align: center;
+			text-decoration: none;
+			font-family: monospace;
+			font-size: 140%;
+			font-weight: bolder;
+			z-index: 9;
+		}
+
+		.menue:hover {                             /* Caractéristiques du menu lors du passage de la sourie*/
+  			background-color: #808000;
+  			color: white;
+		}
+
+		p{                                           /* Caractéristiques du paragraphe d'explication du site */
+			word-break: break-word;
+			margin-top: 1%;
+			font-size: 200%;
+			font-weight: bolder;
+		}
+
+		.barre {                                      /* Caractéristiques de la barre du "BREAKING NEWS" */
+			margin-top: 13%;
+			background-color: #926d27;
+			display: block;
+			overflow: hidden;
+			position: relative;
+			table-layout: fixed;
+			width: 99%;
+		}
+
+		.defile{                                      /* Caractéristiques du texte qui défile dans la barre */
+			display: block;
+			margin-left:1%;
+			padding: 0 5px;
+			text-align: left;
+			height: 5%;
+			font-size: 200%;
+			font-weight: bolder,
+		}
+
+		.footer{                                       /* Caractéristiques du footer */
+			position: fixed;
+		    margin: 0%;
+		    margin-right: 10%;
+		    background-color: #926d27;
+		    color: black;
+		    bottom: 0%;
+		    width: 100%;
+		    height: 5%;
+		    text-align: center;
+		    box-sizing: border-box;
+		    text-decoration: none;
+			color: black;
+			font-family: 'Georgia', cursive, serif;
+			font-size: 150%;
+			font-weight: bolder;
+		}
+
+	</style>
+
+</head>
+
+<meta name="viewport" content="width=device-width">
+
+<body>
+	<header class="fixed">                                  <!-- En tête de nos pages -->                            
+		<a href="file:Who.html">
+			<img border="0" src="arzu.jpg" class="profil">               <!-- Définition de la photos qui amènera à la page Who contenant le CV -->
+		</a>
+		<h3 class="name">                                                
+			Arzu ÇAKIR MORIN
+		</h3>
+		<div>                                                             <!-- Définition des logos Twitter, Facebook et Linkedin ouvrant une nouvelle page avec les comptes de la journaliste-->
+			<a href="https://twitter.com/cakirmorin" onclick="window.open(this.href); return false;">          
+				<img src="Twitter.png" class="clipart">
+			</a>
+			<a href="https://www.linkedin.com/in/arzu-cakir-morin-606a666b/?originalSubdomain=fr" onclick="window.open(this.href); return false;">
+				<img src="linkedin.png" class="clipart">
+			</a>
+			<a href="https://www.facebook.com/arzu.morin" onclick="window.open(this.href); return false;">
+				<img src="Facebook.jpg" class="clipart">
+			</a>
+
+		</div>
+
+			
+		<nav>                                                     <!-- Définition des titres du menu et des liens qu'ils représentent -->
+			<ul>
+
+				<li>
+					<a href="file:Informations.html" class="menue">Liens</a>
+				</li>
+
+				<li>
+					<a href="file:Commentaires.html" class="menue">Commentaires</a>
+				</li>
+
+				<li>
+					<a href="file:Photos.html" class="menue">Photos</a>
+				</li>
+
+				<li>
+					<a href="file:Article.html" class="menue">Articles</a>
+				</li>
+
+				<li>
+					<a href="file:Interviews.html" class="menue">Interviews</a>
+				</li>
+
+				<li>
+					<a href="file:Accueil.html" class="menue">Accueil</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="barre">
+		<marquee class="defile" direction="right" loop="0" behavior="alternate" scrolldelay="3">BREAKING NEWS</marquee>
+	</div>
+
+	<p>
+		<br><br><br>
+		Arzu Cakir Morin, journaliste turque à Paris pour les agences de presse "Voice of America" VOA et "CNN Turk", vous présente une série d'informations journalistiques relatives à Paris et notamment concernant la communauté turque en France.<br><br><br>
+		Grâce à ses 20 ans d'expérience (voir la page présentation d'Arzu Cakir Morin via sa photo), elle vous donne accès sur ce site à des news de dernières minutes concernant Paris et la France. <br><br><br>
+		Vous retrouverez également une série de reportages, photos et vidéos réalisés par Arzu Cakir Morin ainsi que des articles écrits par cette journaliste.<br><br><br>
+		Ce site servira également de passerelle vers des sites d'information française et turque. <br><br><br>
+			
+	</p>
+
+
+</body>
+<footer style="clear:both">                                             <!-- On efface les données qui pourrait interférer avec notre footer, notamment les floats-->
+	<div class="footer">
+		<a href="file:Qui sommes nous.html"> Who are they ? </a>   
+	</div>
+</footer>
+
+</html>
